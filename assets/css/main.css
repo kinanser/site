@@ -1,10 +1,4 @@
-* 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -126,7 +120,7 @@ h6 {
   content: "";
   display: inline-block;
   border-radius: 50%;
-  max-width: 24px;
+  width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
@@ -147,7 +141,7 @@ h6 {
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
-  max-width: 94px;
+  width: 94px;
   height: 94px;
   background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
   border-radius: 50%;
@@ -159,7 +153,7 @@ h6 {
 .pulsating-play-btn:before {
   content: "";
   position: absolute;
-  max-width: 120px;
+  width: 120px;
   height: 120px;
   animation-delay: 0s;
   animation: pulsate-play-btn 2s;
@@ -180,7 +174,7 @@ h6 {
   left: 50%;
   top: 50%;
   transform: translateX(-40%) translateY(-50%);
-  max-width: 0;
+  width: 0;
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -195,7 +189,7 @@ h6 {
   left: 50%;
   top: 50%;
   transform: translateX(-40%) translateY(-50%);
-  max-width: 0;
+  width: 0;
   height: 0;
   border: none;
   border-top: 10px solid transparent;
@@ -360,7 +354,7 @@ h6 {
     left: 0;
     background-color: var(--nav-hover-color);
     visibility: hidden;
-    max-width: 0px;
+    width: 0px;
     transition: all 0.3s ease-in-out 0s;
   }
 
@@ -485,7 +479,7 @@ h6 {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
-    max-width: 30px;
+    width: 30px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -602,7 +596,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 40px;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
@@ -742,7 +736,7 @@ h6 {
   border: 6px solid #ffffff;
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;
-  max-width: 60px;
+  width: 60px;
   height: 60px;
   animation: animate-preloader 1.5s linear infinite;
 }
@@ -768,7 +762,7 @@ h6 {
   bottom: 15px;
   z-index: 99999;
   background-color: var(--accent-color);
-  max-width: 40px;
+  width: 40px;
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
@@ -890,7 +884,7 @@ section,
 
 .section-title h2::after {
   content: "";
-  max-width: 120px;
+  width: 120px;
   height: 1px;
   display: inline-block;
   background: var(--accent-color);
@@ -1108,7 +1102,7 @@ section,
 
 .services .details .icon {
   margin: 0;
-  max-width: 72px;
+  width: 72px;
   height: 72px;
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -1365,7 +1359,7 @@ section,
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  max-width: 100px;
+  width: 100px;
   border-radius: 50%;
   border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
   margin: 0 auto;
@@ -1428,7 +1422,7 @@ section,
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
-  max-width: 12px;
+  width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 50%);
   opacity: 0.5;
@@ -1594,7 +1588,7 @@ section,
   content: "";
   position: absolute;
   display: block;
-  max-width: 50px;
+  width: 50px;
   height: 1px;
   background: color-mix(in srgb, var(--default-color), transparent 60%);
   bottom: 0;
@@ -1639,7 +1633,7 @@ section,
 .contact .info-item i {
   font-size: 20px;
   color: var(--accent-color);
-  max-width: 56px;
+  width: 56px;
   height: 56px;
   font-size: 24px;
   display: flex;
@@ -1728,7 +1722,7 @@ section,
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  max-width: 12px;
+  width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
@@ -1848,24 +1842,4 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
-}
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  .container, img, video {
-    width: 100%;
-    height: auto;
-  }
-
-  nav, footer, buttons {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 }
